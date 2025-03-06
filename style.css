@@ -65,6 +65,18 @@ input {
     font: inherit;
 }
 
+input:required {
+    border: 2px solid grey;
+}
+
+input:valid {
+    border-color: darkgreen;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
 .input-hint {
     font-size: 0.8rem;
     padding-top: 0.2rem;
