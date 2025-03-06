@@ -31,7 +31,7 @@ main {
 }
 
 h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 form {
@@ -40,6 +40,12 @@ form {
     flex-basis: 50%;
     row-gap: var(--row-gap);
     column-gap: var(--column-gap);
+}
+
+.note {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    margin-bottom: 0.5rem;
 }
 
 .input-wrapper {
