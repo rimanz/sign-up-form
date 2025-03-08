@@ -101,3 +101,19 @@ button[type=submit] {
     font-weight: 500;
     margin-top: var(--row-gap);
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    aside {
+        background-size: contain;
+    };
+}
+
+@media screen and(max-width: 1024px) {
+    aside {
+        background-size: contain;
+    }
+}
