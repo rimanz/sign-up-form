@@ -26,6 +26,8 @@ The project will be live at: [https://rimanz.github.io/sign-up-form](https://rim
 
 ## Credits
 - [The Odin Project](https://www.theodinproject.com/) for guidance and inspiration.
+- User illustrations by [Storyset](https://storyset.com/user)
 - Supportive communities: [MDN Web Docs](https://developer.mozilla.org/)
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
