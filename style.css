@@ -15,22 +15,27 @@
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
     color: var(--brand-color);
     background-color: #f9fafb;
 }
 
+.container {
+    max-width: 1920px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
 aside {
     background-image: url('images/Sign\ up-rafiki.svg');
-    background-size: contain;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
     flex-basis: 40%;
     flex-grow: 1;
     min-height: 80vh;
-    min-width: 320px;
+    min-width: 340px;
 }
 
 header {
@@ -70,7 +75,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-basis: 60%;
     flex-grow: 2;
 }
@@ -79,6 +84,7 @@ main {
     font-size: 1.25rem;
     font-weight: 500;
     padding: 2rem;
+    max-width: 70ch;
 }
 
 form {
@@ -90,7 +96,7 @@ fieldset {
     flex-wrap: wrap;
     row-gap: var(--row-gap);
     column-gap: var(--column-gap);
-    min-width: 400px;
+    min-width: 340px;
     border: none;
     background-color: white;
     width: 100%;
@@ -109,7 +115,8 @@ fieldset legend {
 }
 
 .input-wrapper {
-    min-width: 200px;
+    min-width: 250px;
+    max-width: 350px;
     width: calc(50% - (var(--column-gap) / 2));
     display: flex;
     flex-grow: 1;
@@ -187,6 +194,7 @@ footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 5rem;
 }
 
 .cite {
@@ -198,6 +206,7 @@ footer {
 
 .cite a {
     color: inherit;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 

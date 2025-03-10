@@ -8,77 +8,79 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <aside>
-        <header>
-            <div class="logo">
-                <img src="images/logo.svg" alt="logo">
-                <div class="brand">Enlister</div>
-            </div>
-        </header>
-    </aside>
-
-    <main>
-        <div class="welcome-text">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-
-            <p>Sign up <em>now</em> to get started.</p>
-
-            <br>
-            <p>You <em>know</em> you want to.</p>
-        </div>
-
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Let's do this!</legend>
-
-                <div class="input-wrapper">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" required>
+    <div class="container">
+        <aside>
+            <header>
+                <div class="logo">
+                    <img src="images/logo.svg" alt="logo">
+                    <div class="brand">Enlister</div>
                 </div>
+            </header>
+        </aside>
 
-                <div class="input-wrapper">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
+        <main>
+            <div class="welcome-text">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
 
-                <div class="input-wrapper">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+                <p>Sign up <em>now</em> to get started.</p>
 
-                <div class="input-wrapper">
-                    <label for="phone">Phone <small>(Optional)</small></label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-
-                <div class="input-wrapper">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" minlength="8" aria-describedby="pasword-hint" required>
-                    <span id="password-hint" class="input-hint">
-                        Password must be eight character long and contain one or more letters and numbers.
-                    </span>
-                </div>
-
-                <div class="input-wrapper"> 
-                    <label for="password-confirmation">Confirm Password</label>
-                    <input type="password" id="password-confirmation" name="password-confirmation" minlength="8" aria-describedby="password-confirmation-hint" required>
-                    <span id="password-confirmation-hint" class="input-hint">
-                        Re-type your password again.
-                    </span>
-                </div>
-            </fieldset>
-
-            <div class="input-wrapper">
-                <button type="submit">Sign Up</button>
+                <br>
+                <p>You <em>know</em> you want to.</p>
             </div>
 
-            <div class="opt-for-login">Already have an account? <a href="#">Log In</a></div>
-        </form>
-    </main>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Let's do this!</legend>
 
-    <footer>
-        <div class="cite">User illustrations by <a href="https://storyset.com/user">Storyset</a></div>
-        <div class="blank">&nbsp;</div>
-    </footer>
+                    <div class="input-wrapper">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="phone">Phone <small>(Optional)</small></label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="8" aria-describedby="pasword-hint" required>
+                        <span id="password-hint" class="input-hint">
+                            Password must be eight character long and contain one or more letters and numbers.
+                        </span>
+                    </div>
+
+                    <div class="input-wrapper"> 
+                        <label for="password-confirmation">Confirm Password</label>
+                        <input type="password" id="password-confirmation" name="password-confirmation" minlength="8" aria-describedby="password-confirmation-hint" required>
+                        <span id="password-confirmation-hint" class="input-hint">
+                            Re-type your password again.
+                        </span>
+                    </div>
+                </fieldset>
+
+                <div class="input-wrapper">
+                    <button type="submit">Sign Up</button>
+                </div>
+
+                <div class="opt-for-login">Already have an account? <a href="#">Log In</a></div>
+            </form>
+        </main>
+
+        <footer>
+            <div class="cite">User illustrations by <a href="https://storyset.com/user" target="_blank" rel="noopener">Storyset</a></div>
+            <div class="blank">&nbsp;</div>
+        </footer>
+    </div>
 </body>
 </html>
