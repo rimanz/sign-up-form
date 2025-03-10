@@ -30,6 +30,7 @@ aside {
     flex-basis: 40%;
     flex-grow: 1;
     min-height: 80vh;
+    min-width: 320px;
 }
 
 header {
@@ -72,51 +73,54 @@ main {
     align-items: center;
     flex-basis: 60%;
     flex-grow: 2;
-    padding: 2rem;
 }
 
 .welcome-text {
     font-size: 1.25rem;
     font-weight: 500;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding: 2rem;
 }
 
 form {
+    width: 100%;
+}
+
+fieldset {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 90%;
     row-gap: var(--row-gap);
     column-gap: var(--column-gap);
-    min-width: 320px;
-    max-width: 600px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 2rem 1.5rem;
+    min-width: 400px;
+    border: none;
+    background-color: white;
+    width: 100%;
+    box-shadow: 3px 2px 5px 0 silver;
+    padding-top: 5rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
 }
 
-h2 {
-    margin-bottom: 1rem;
-}
-
-.note {
-    font-size: 0.95rem;
-    min-width: 100%;
-    opacity: 0.75;
-    margin-bottom: 0.5rem;
+fieldset legend {
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .input-wrapper {
-    min-width: 160px;
+    min-width: 200px;
     width: calc(50% - (var(--column-gap) / 2));
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 label{
     display: block;
-    height: 1.2rem;
+    height: 1.5rem;
     font-size: 0.9rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -124,24 +128,27 @@ label{
 
 input, button {
     display: block;
-    height: 2rem;
+    height: 2.5rem;
+    border: 2px solid inherit;
+    border-radius: 3px;
 }
 
 input {
     padding: 5px;
     font: inherit;
+    border: 2px solid silver;
 }
 
-input:required {
-    border: 2px solid grey;
-}
-
-input:valid {
-    border-color: darkgreen;
+input:user-valid {
+    border-color: forestgreen;
 }
 
 input:user-invalid {
     border-color: red;
+}
+
+input:focus, input:active {
+    border-color: midnightblue;
 }
 
 .input-hint {
@@ -150,11 +157,26 @@ input:user-invalid {
 }
 
 button[type=submit] {
-    height: 2rem;
+    height: 2.75rem;
     min-width: calc(50% - (var(--column-gap) / 2));
-    font-size: inherit;
-    font-weight: 500;
+    font-size: 1.125rem;
+    font-weight: 600;
     margin-top: var(--row-gap);
     background-color: var(--brand-color);
     color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 2rem 0;
+    margin-right: 1rem;
+}
+
+.opt-for-login {
+    font-weight: 500;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.opt-for-login a {
+    color: var(--brand-color);
+    font-weight: 700;
 }
