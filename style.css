@@ -27,6 +27,11 @@ body {
     margin: 0 auto;
 }
 
+a:link, a:visited {
+    color: inherit;
+    font-weight: 700;
+}
+
 aside {
     background-image: url('images/Sign\ up-rafiki.svg');
     background-size: 120%;
@@ -146,7 +151,7 @@ input {
     border: 2px solid silver;
 }
 
-input:user-valid {
+input:valid {
     border-color: forestgreen;
 }
 
@@ -154,8 +159,10 @@ input:user-invalid {
     border-color: red;
 }
 
-input:focus, input:active {
+input:focus {
     border-color: midnightblue;
+    box-shadow: 1px 2px 3px rgb(192, 192, 192);
+    outline: 0;
 }
 
 .input-hint {
@@ -183,11 +190,6 @@ button[type=submit] {
     margin-bottom: 2rem;
 }
 
-.opt-for-login a {
-    color: inherit;
-    font-weight: 700;
-}
-
 footer {
     height: 1rem;
     width: 100%;
@@ -201,13 +203,8 @@ footer {
     flex-basis: 40%;
     flex-grow: 1;
     min-width: 320px;
-    text-align: center;
-}
-
-.cite a {
-    color: inherit;
     font-size: 0.8rem;
-    font-weight: bold;
+    text-align: center;
 }
 
 .blank {
